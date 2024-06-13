@@ -23,9 +23,10 @@ public class parser {
 		
 		// LeetCodeSubmissions/{title}/Accepted/{time}/info.txt
 		
-		String loc = "/Users/{User}/eclipse-workspace/LeetCodeSubmissions";
+		String USER = "rexlin";
+		String src = "/Users/"+ USER + "/eclipse-workspace/submissions";
 		
-		File submissionFolder = new File(loc);
+		File submissionFolder = new File(src);
 		File[] folders = submissionFolder.listFiles();
 
 		for (File folder : folders) {
@@ -34,7 +35,7 @@ public class parser {
 			
 			System.out.print("parsing " + title);
 			
-			File acFolder = new File(loc+"/"+title+"/Accepted");
+			File acFolder = new File(src+"/"+title+"/Accepted");
 			if(!acFolder.exists()) continue;
 			
 			String[] timeArr = acFolder.list();
@@ -67,7 +68,7 @@ public class parser {
 				
 				
 			}
-			String timepath = loc+"/"+title+"/Accepted/"+timeStr;
+			String timepath = src+"/"+title+"/Accepted/"+timeStr;
 			
 			
 			
@@ -95,7 +96,7 @@ public class parser {
 			}
 			
 			String sourcePath = timepath + "/" + name[0]+"."+name[1];
-			String targetPath = "/Users/{User}/git/LeetCode/Java/" + id + ". " + title + "." + name[1];
+			String targetPath = "/Users/" + USER + "/git/leetcode-challenge/Problems/Java/" + id + "." + title + "." + name[1];
 			
 			File copied = new File(targetPath);
 		    
