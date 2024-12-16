@@ -1,6 +1,6 @@
 # leetcode-submissions-parser
 
-new ref : [[https://github.com/world177/Leetcode-Downloader-for-Submissions](https://github.com/jungsu-kwon/Leetcode-Downloader-for-Submissions)]
+new ref : https://github.com/jungsu-kwon/Leetcode-Downloader-for-Submissions
 
 using javascript paring leetcode website as file and convert
 
